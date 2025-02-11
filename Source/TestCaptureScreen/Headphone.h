@@ -37,4 +37,10 @@ protected:
 	// Blueprint implementable event
 	UFUNCTION(BlueprintImplementableEvent, Category = "Interaction")
 	void AttachToCharacterHead(AVRCharacterParent* Character);
+
+	UFUNCTION(BlueprintImplementableEvent, BlueprintCallable, Category = "Interaction")
+	void StartMusic();
+	UFUNCTION(BlueprintImplementableEvent, BlueprintCallable, Category = "Interaction")
+	void StopMusic();
+
 };
